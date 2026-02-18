@@ -1,0 +1,68 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2024 The MathWorks, Inc.
+                  R2024a (24.1.0.2537033) 64-bit (glnxa64)
+                             February 21, 2024
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+Found CSV file: MS_xenium_parti.csv
+[2025-06-09 17:02:51] Script started.
+Loaded gene expression in 1.85 sec
+Converting discrete features to booleans
+Starting to perform PCA, for big data on slow computers this may take a while...
+Calculating explained variance with PCHA (Morup M, Hansen KL, 2011)
+Elbow method suggests 5 archetypes.
+Please indicate the desired number of archetypes (or press enter for using the suggestion): >>Calculating archetypes positions with PCHA (Morup M & Hansen LK, 2011)
+finished finding the archetypes
+Now computing t-ratios.
+10% done
+20% done
+30% done
+40% done
+50% done
+60% done
+70% done
+80% done
+90% done
+100% done
+The significance of 5 archetypes has p-value of: 0.00000 
+Now calculating errors on the archetypes.
+10% done
+20% done
+30% done
+40% done
+50% done
+60% done
+70% done
+80% done
+90% done
+100% done
+finished finding the archetypes error distribution
+[Warning: Colon operands must be real scalars. This warning will become an error
+in a future release.] 
+[> In sortDataByDistance (line 10)
+In calculateEnrichment (line 44)
+In ParTI (line 137)
+In run_parTI_sc (line 35)
+In run (line 112)
+] 
+Finished sorting data points.
+Finished computing discrete enrichments.
+Finished computing continuous enrichments.
+ParTI finished in 44624.76 sec
+Converting discrete features to booleans
+Will use archetypes passed as argument instead of determining them from scratch.
+[Warning: Colon operands must be real scalars. This warning will become an error
+in a future release.] 
+[> In sortDataByDistance (line 10)
+In calculateEnrichment (line 44)
+In ParTI_lite (line 129)
+In run_parTI_sc (line 46)
+In run (line 112)
+] 
+Finished sorting data points.
+Finished computing discrete enrichments.
+Finished computing continuous enrichments.

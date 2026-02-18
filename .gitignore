@@ -1,0 +1,11 @@
+# OS/editor noise
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Jupyter runtime noise
+.ipynb_checkpoints/
+
+# Generic temporary files
+*.tmp
+*.bak
