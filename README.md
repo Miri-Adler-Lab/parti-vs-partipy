@@ -1,6 +1,6 @@
 # parTI vs partipy
 
-Comparison workflow for ParTI and partipy archetype outputs across multiple datasets/timepoints (`hcm`, `hep`, `msx`), with both Python notebook analysis and MATLAB ParTI execution artifacts.
+Comparison workflow for ParTI and partipy archetype outputs across multiple datasets (`hcm`, `hep`, `msx`), with both Python notebook analysis and MATLAB ParTI execution artifacts.
 
 ## Repository Layout
 
@@ -11,41 +11,14 @@ Comparison workflow for ParTI and partipy archetype outputs across multiple data
 
 ## Environment
 
-Python notebook kernel is configured as `sc_bio_py311` and uses:
+Python notebook kernel uses:
 
 - `numpy`
 - `pandas`
 - `scipy`
 - `matplotlib`
 
-## Run the Python Comparison Workflow
 
-Open the notebook and run all cells:
-
-```powershell
-conda activate sc_bio_py311
-jupyter lab
-```
-
-Optional headless execution check:
-
-```powershell
-python -m nbconvert --execute --to notebook --inplace parti_vs_partipy.ipynb
-```
-
-## Run ParTI (MATLAB)
-
-From MATLAB (or non-interactive mode), run:
-
-```powershell
-matlab -nodisplay -r "run('parTI_matlab_run/run_parTI_sc.m'); exit"
-```
-
-For SLURM environments:
-
-```bash
-sbatch parTI_matlab_run/run_parTI_slurm.sbatch
-```
 
 ## Data and Outputs
 
@@ -58,7 +31,7 @@ sbatch parTI_matlab_run/run_parTI_slurm.sbatch
   - `output/summary.csv`
   - `output/all_distance_tables.xlsx`
 
-## Notes
+## Note
 
-- `parTI_matlab_run/run_parTI_sc.m` currently includes a lab-specific ParTI path (`/sci/labs/miri.adler/avia.walfisch/particode`); update it if your environment differs.
-- This repository intentionally tracks analysis artifacts currently present in the workspace.
+- `parTI_matlab_run/run_parTI_sc.m` currently includes a lab-specific ParTI path (`/sci/labs/miri.adler/avia.walfisch/particode`).. 
+ - If you want to run parTI you need to add the folder to your path.
