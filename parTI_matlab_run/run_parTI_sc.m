@@ -59,18 +59,6 @@ fprintf('Loaded gene expression in %.2f sec\n', toc(t_load));
 [arc, arcOrig, pc, errs, pval] = ParTI(...
     geneExpression, 5, 8, [], [], 0, [], [], [], 0.05, prefix);
 
-% ParTI argument map for this call:
-%   1) DataPoints      = geneExpression
-%   2) algNum          = 5      (PCHA algorithm)
-%   3) dim             = 8      (PCA dimensionality inspected by ParTI)
-%   4) DiscFeatName    = []     (no discrete feature labels)
-%   5) EnMatDis        = []     (no discrete feature matrix)
-%   6) cols            = 0      (booleanization helper; NOT delta)
-%   7) ContFeatName    = []     (no continuous feature labels)
-%   8) EnMatCont       = []     (no continuous feature matrix)
-%   9) GOcat2Genes     = []     (no GO mapping matrix)
-%  10) binSize         = 0.05   (enrichment bin size)
-%  11) OutputFileName  = prefix (base name for output files)
 
 fprintf('ParTI finished');
 
